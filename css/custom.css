@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Sofia&display=swap');
+
+.bg-custom {
+    background-color: #fd79a8;
+}
+
+.btn-primary {
+    background-color: #f39c12;
+    border: #fff solid 2px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 40px;
+
+}
+
+.btn-primary:hover {
+    background-color: #b36f02;
+}
+
+.isi h1 {
+    font-family: 'Sofia';
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.isi h2 {
+    font-family: 'Poppins';
+    font-size: 50px;
+    font-weight: bold;
+}

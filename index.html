@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Jualan Mambo Es Krim Nikmat</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&family=Sofia&display=swap');
+
+        .text-1 {
+            font-family: 'Oleo Script Swash Caps', cursive;
+            font-size: 5rem;
+        }
+
+        .text-2 {
+            font-family: 'Sofia';
+        }
+
+        .bg-coklat {
+            background-color: #cc8e35;
+        }
+
+        .bg-vanila {
+            background-color: #fdcb6e;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo3.png" height="50px" alt="">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pilihan Rasa
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#rasa">Strawbery</a>
+                            <a class="dropdown-item" href="#rasa">Coklat </a>
+                            <a class="dropdown-item" href="#rasa">Vanila </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#alamat">Alamat</a>
+                    </li>
+                </ul>
+
+            </div>
+    </nav>
+
+    <section class="isi mt-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 align-self-center">
+                    <h1> Mamamia Ice Cream </h1>
+                    <h2> Es Krim Terlezat Sepanjang Masa </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsa labore architecto
+                        dolorem, ratione deleniti nemo quisquam velit excepturi nihil aspernatur illo ea officiis dolore
+                        sapiente officia beatae aut sit!
+                    </p>
+                    <a href="#beli" class="btn btn-primary" role="button">Beli Sekarang </a>
+                    <!-- <button class="sembunyi">Sembunyikan</button>
+                    <button class="tampil">Tampilkan</button> -->
+
+
+                </div>
+                <div class="col-md-4 d-none d-md-block d-lg-block d-xl-block">
+                    <img src=" img/eskrim.jpg" alt="happy" width="400px" height="600px" class="img-fluid" id="foto">
+                </div>
+            </div>
+        </div>
+    </section>
+    <h1 class="text-center my-2 bg-pink text-1">Pilihan Rasa</h1>
+    <div class="container" id="rasa">
+
+        <div class="row">
+            <div class="col-lg-4 col-md-12 bg-coklat py-5">
+                <div class="row text-center">
+                    <div class="col-lg">
+                        <img src="img/2coklat.jpg" alt="" class="img-fluid">
+                        <h1 class="text-1 mx-3"> Coklat</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et sed exercitationem labore velit
+                            cumque
+                            impedit?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 bg-custom text-light py-5">
+                <div class="row text-center">
+                    <div class="col-lg-12">
+                        <img src="img/1.jpg" alt="" class="img-fluid">
+                        <h1 class="text-1 mx-3"> Strawbery</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et sed exercitationem labore velit
+                            cumque
+                            impedit?
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-lg-4 col-md-12 bg-vanila py-5">
+                <div class="row text-center">
+                    <div class="col-lg ">
+                        <img src="img/vanila.jpg" alt="" class="img-fluid">
+                        <h1 class="text-1 mx-3"> Vanila</h1>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-lg">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et sed exercitationem labore velit
+                            cumque
+                            impedit?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3" id="beli">
+        <div class="col-md-8 offset-2 bg-custom text-center">
+            <h1>Pesan Sekarang</h1>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Masukan Nama</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Masukan Nama">
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputAlamat">Alamat</label>
+                    <input type="password" class="form-control" id="exampleInputAlamat" placeholder="Masukan Alamat">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputHP">NO HP</label>
+                    <input type="password" class="form-control" id="exampleInputHP" placeholder="Masukan NO HP">
+                </div>
+
+                <button type="submit" class="btn btn-primary mb-4">Pesan</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="row mt-3" style="height: 100px;">
+        <div class="col-md-8 offset-2 text-center">
+            <marquee behavior="" direction="">
+                <h2>
+                    Dapat kan Diskon 10% untuk pembeli 3 rasa
+                </h2>
+            </marquee>
+        </div>
+    </div>
+
+    <div class="row mt-3" style="height: 100px;" id="alamat">
+        <div class="col-md-8 offset-2 text-center">
+            <h3 class="text-uppercase font-weight-bold">
+                <i class="las la-map-marker-alt"></i>
+                Alamat Kami: Jalan Jendral Sudirman no.100 A
+            </h3>
+            <h3 class="font-weight-bold">
+                Thehok
+            </h3>
+            <h3 class="font-weight-bold">
+                Jambi
+            </h3>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".sembunyi").click(function () {
+                $("#foto").hide("slow");
+            });
+
+            $(".tampil").click(function () {
+                $("#foto").show("normal");
+            });
+        });
+    </script>
+
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>
